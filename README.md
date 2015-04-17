@@ -99,7 +99,7 @@ You will need to generate your own API access tokens using the settings panel wi
 
 ### Members
 
-##### emma.member.list([params], callback);
+##### emma.member.list(params, callback);
 
 ```javascript
 emma.member.list({
@@ -107,10 +107,22 @@ emma.member.list({
 }, function (err, members) {
 	if(err) console.log(err);
 	if(members) console.log(members);
-})
+});
 ```
 
-* emma.member.bulkAdd(details, callback);
+##### emma.member.bulkAdd(params, callback);
+
+```javascript
+emma.member.bulkAdd({
+	members: [],
+	source_filename: filename,
+	add_only: true, // Optional -- only add new members
+	group_ids: []
+}, function (err, added) {
+	if(err) console.log(err);
+	if(added) console.log(added);
+});
+
 * emma.member.addOne(details, callback);
 * emma.member.signup(details, callback);
 * emma.member.bulkDelete(details, callback);
