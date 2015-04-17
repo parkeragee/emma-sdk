@@ -122,6 +122,7 @@ emma.member.bulkAdd({
 	if(err) console.log(err);
 	if(added) console.log(added);
 });
+```
 
 * emma.member.addOne(details, callback);
 * emma.member.signup(details, callback);
