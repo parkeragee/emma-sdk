@@ -99,7 +99,18 @@ You will need to generate your own API access tokens using the settings panel wi
 
 ### Members
 
-* emma.member.list([params], callback);
+##### emma.member.list([params], callback);
+
+```javascript
+emma.member.list({
+	// Optional 'deleted' parameter to included deleted members
+	deleted: true
+}, function (err, members) {
+	if(err) console.log(err);
+	if(members) console.log(members);
+})
+```
+
 * emma.member.bulkAdd(details, callback);
 * emma.member.addOne(details, callback);
 * emma.member.signup(details, callback);
