@@ -60,7 +60,7 @@ You will need to generate your own API access tokens using the settings panel wi
 * emma.mailing.validate(details, callback);
 * emma.mailing.withID(id).details(callback);
 
-### emma.mailing.withID(id).resend(params, callback);
+##### emma.mailing.withID(id).resend(params, callback);
 
 ```javascript
 	emma.mailing.withID(id).resend({
