@@ -103,7 +103,7 @@ You will need to generate your own API access tokens using the settings panel wi
 
 ```javascript
 emma.member.list({
-	deleted: true // Optional -- defaults to false
+	deleted: false
 }, function (err, members) {
 	if(err) console.log(err);
 	if(members) console.log(members);
