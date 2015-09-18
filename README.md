@@ -81,7 +81,7 @@ You will need to generate your own API access tokens using the settings panel wi
 	emma.mailing.withID(id).update({
 	}, function (err, updated) {
 		if(err) console.log(err);
-		if(updated) console.log(resent);
+		if(updated) console.log(updated);
 	});
 ```
 
