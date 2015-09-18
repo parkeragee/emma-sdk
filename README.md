@@ -133,7 +133,7 @@ emma.member.bulkAdd({
 emma.member.singup({
 	email: '',
 	group_ids: [],
-	fields: [], // Optional
+	fields: {}, // Optional
 	signup_form_id: '', // Optional
 	opt_in_subject: '', // Optional
 	opt_in_message: '', // Optional
