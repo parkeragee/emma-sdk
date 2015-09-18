@@ -125,6 +125,7 @@ emma.member.bulkAdd({
 ```
 
 * emma.member.addOne(details, callback);
+
 ##### emma.member.signup(details, callback);
 [Link](http://api.myemma.com/api/external/members.html#post--#account_id-members-signup)
 
