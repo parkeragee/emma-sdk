@@ -125,7 +125,21 @@ emma.member.bulkAdd({
 ```
 
 * emma.member.addOne(details, callback);
-* emma.member.signup(details, callback);
+##### emma.member.signup(details, callback);
+[Link](http://api.myemma.com/api/external/members.html#post--#account_id-members-signup)
+
+```javascript
+emma.member.singup({
+	email: '',
+	group_ids: [],
+	fields: [], // Optional
+	signup_form_id: '', // Optional
+	opt_in_subject: '', // Optional
+	opt_in_message: '', // Optional
+	field_triggers: true, // Optional
+	opt_in_confirmation: true, // Optional
+});
+```
 * emma.member.bulkDelete(details, callback);
 * emma.member.bulkUpdatingStatus(details, callback);
 * emma.member.multiRemoveFromGroups(details, callback);
